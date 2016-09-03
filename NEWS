@@ -1,0 +1,22 @@
+NEWS REGARDING BYTEIO 0.01
+
+- Added read function family: these functions have adequate prototype to
+  function `getc', and work similarly. On error, they return junk and pass
+  errno from fread.
+
+  Prototype:
+  <TYPE> byteio_read_<TYPE> (FILE *);
+
+- Added write function family: these functions have adequate prototype to
+  function `putc', and work similarly. On error, they return EOF and pass errno
+  from fwrite.
+
+  Prototype:
+  int byteio_write_<TYPE> (FILE *, <TYPE>);
+
+- Added readsafe function family: these functions have prototypes like write,
+  but behave like read. The second parameter is a pointer, whose target is set
+  to the read value. This function is faster than read.
+
+  Prototype:
+  int byteio_readsafe_<TYPE> (FILE *, <TYPE> *);
