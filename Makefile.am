@@ -1,5 +1,13 @@
 lib_LTLIBRARIES = libbyteio.la
 libbyteio_la_SOURCES = \
+                       flip_int16.c \
+                       flip_int32.c \
+                       flip_int64.c \
+                       \
+                       flip_uint16.c \
+                       flip_uint32.c \
+                       flip_uint64.c \
+                       \
                        get__errno.c \
                        \
                        read_int8.c \

@@ -90,6 +90,14 @@ int byteio_readsafe_uint64 (FILE *, byteio_uint64 *);
 int byteio_readsafe_float32 (FILE *, byteio_float32 *);
 int byteio_readsafe_float64 (FILE *, byteio_float64 *);
 
+byteio_int16 byteio_flip_int16 (byteio_int16);
+byteio_int32 byteio_flip_int32 (byteio_int32);
+byteio_int64 byteio_flip_int64 (byteio_int64);
+
+byteio_uint16 byteio_flip_uint16 (byteio_uint16);
+byteio_uint32 byteio_flip_uint32 (byteio_uint32);
+byteio_uint64 byteio_flip_uint64 (byteio_uint64);
+
 #ifdef __cplusplus
 }
 #endif

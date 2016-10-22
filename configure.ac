@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([ByteIO], [0.01], [kuba@kaszycki.net.pl], [byteio])
+AC_INIT([ByteIO], [0.02], [kuba@kaszycki.net.pl], [byteio])
 AC_CONFIG_SRCDIR([byteio.h])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_AUX_DIR([build-aux])
